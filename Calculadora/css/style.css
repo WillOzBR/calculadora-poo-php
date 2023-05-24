@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-around;
+    background-color: lightseagreen;
+    width: 100%;
+    font-family: 'Prompt', sans-serif;
+    font-size: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: aliceblue;
+}

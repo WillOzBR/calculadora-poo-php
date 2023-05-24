@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Calculadora</title>
 </head>
 <body>
     <div class="cabecalho">
         <h1>Calculadora</h1>
-        <h3>William Cellegin</h3>
+        <h1>William Cellegin</h1>
     </div>
     <div class="formulario">
         <form action="./php/calculadora.php" method="get">

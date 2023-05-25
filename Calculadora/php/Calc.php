@@ -14,8 +14,31 @@ class Calc{
 
     public function somar(float $a, float $b){
         $this->setC($this->getA()+$this->getB());
-		print("O valor de c é = {$this->getC()}");
+		print("O valor da soma de {$this->getA()} + {$this->getB()} é = {$this->getC()}<br>");
 		return $this;
+    }
+
+	public function subtrair(float $a, float $b){
+        $this->setC($this->getA()-$this->getB());
+		print("O valor da subtração de {$this->getA()} - {$this->getB()} é = {$this->getC()}<br>");
+		return $this;
+    }
+
+	public function multiplicar(float $a, float $b){
+        $this->setC($this->getA()*$this->getB());
+		print("O valor da multiplicação de {$this->getA()} x {$this->getB()} é = {$this->getC()}<br>");
+		return $this;
+    }
+
+	public function dividir(float $a, float $b){
+		if($this->getB()==0){
+			print("Erro! Divisão por 0!");
+		} else{
+        $this->setC($this->getA()/$this->getB());
+		print("O valor da divisão de {$this->getA()} / {$this->getB()} é = {$this->getC()}<br>");
+		return $this;
+		}
+		
     }
 
     /**

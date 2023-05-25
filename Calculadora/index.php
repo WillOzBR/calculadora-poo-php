@@ -18,7 +18,10 @@
             <input type="text" name="num1" id="num1">
             <label for="num2">Número 2</label>
             <input type="text" name="num2" id="num2">
-            <input type="submit" value="Calcular">
+            <input type="submit" value="+" name="somar">
+            <input type="submit" value="-" name="subtrair">
+            <input type="submit" value="*" name="multiplicar">
+            <input type="submit" value="/" name="dividir">
         </form>
     </div>
 </body>

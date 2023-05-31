@@ -14,16 +14,19 @@
     </div>
     <div class="formulario">
         <form action="./php/calculadora.php" method="get">
-            <label for="num1">Número 1</label>
-            <input type="text" name="num1" id="num1" value="0">
-            <label for="num2">Número 2</label>
-            <input type="text" name="num2" id="num2" value="0">
-            <input type="submit" value="+" name="somar" id="ad">
-            <input type="submit" value="-" name="subtrair" id="sub">
-            <input type="submit" value="×" name="multiplicar" id="multi">
-            <input type="submit" value="/" name="dividir" id="div">
-            <input type="submit" value="×^" name="elevar" id="exp">
-            <input type="submit" value="√" name="acharRaiz" id="raz">
+            <div class="formulario">
+                <label for="num1">Número 1</label>
+                <input type="text" name="num1" id="num1" value="0">
+                <label for="num2">Número 2</label>
+                <input type="text" name="num2" id="num2" value="0">
+            </div>
+                <input type="submit" value="+" name="somar" id="ad">
+                <input type="submit" value="-" name="subtrair" id="sub">
+                <input type="submit" value="×" name="multiplicar" id="multi">
+                <input type="submit" value="/" name="dividir" id="div">
+                <input type="submit" value="×^" name="elevar" id="exp">
+                <input type="submit" value="√" name="acharRaiz" id="raz">
+           
         </form>
     </div>
 </body>

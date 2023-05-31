@@ -8,10 +8,14 @@
     overflow-x: hidden;
 }
 
+body{
+    background-color: #F6F1F1;
+}
+
 .cabecalho{
     display: flex;
     justify-content:space-between;
-    background-color: lightseagreen;
+    background-color: #146C94;
     width: 99%;
     font-family: 'Prompt', sans-serif;
     font-size: 16px;
@@ -29,9 +33,37 @@
     font-weight: bolder;
     text-align: center;
     border-style: none;
-    padding: 0%;
+    align-self: center;
 }
+
+
 
 #ad, #sub, #raz, #exp, #div, #multi:hover{
 
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+.formulario input{
+    border-style: none;
+    border-radius: 50px;
+
+}
+
+.formulario label{
+    font-size: 20px;
+    font-family: 'Prompt', sans-serif;
+}
+
+form{
+    background-color: #AFD3E2;
+    width: 15%;
+    padding-bottom: 40px;
+    border-radius: 30px;
 }

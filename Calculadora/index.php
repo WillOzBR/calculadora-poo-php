@@ -20,13 +20,14 @@
                 <label for="num2">Número 2</label>
                 <input type="text" name="num2" id="num2" value="0">
             </div>
+            <div class="botao">
                 <input type="submit" value="+" name="somar" id="ad">
                 <input type="submit" value="-" name="subtrair" id="sub">
                 <input type="submit" value="×" name="multiplicar" id="multi">
                 <input type="submit" value="/" name="dividir" id="div">
                 <input type="submit" value="×^" name="elevar" id="exp">
                 <input type="submit" value="√" name="acharRaiz" id="raz">
-           
+            </div>
         </form>
     </div>
 </body>

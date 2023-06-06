@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Calculadora2</title>
 </head>
 <body>
@@ -24,8 +24,8 @@
          $exp = $_GET['elevar'];
          $raiz = $_GET['acharRaiz'];
 
-         print("O Valor de a é {$calculadora->getA()}<br>");
-         print("O Valor de b é {$calculadora->getB()}<br>");
+         print("<div class = 'result'>O Valor de a é =  <b>{$calculadora->getA()}</b><br></div>");
+         print("<div class = 'result'>O Valor de b é =  <b>{$calculadora->getB()}</b><br></div>");
          if (isset($soma)){
          $calculadora->somar($calculadora->getA(), $calculadora->getB());
          } else if(isset($sub)){

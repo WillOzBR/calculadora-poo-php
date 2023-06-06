@@ -14,28 +14,28 @@ class Calc{
 
     public function somar(float $a, float $b){
         $this->setC($this->getA()+$this->getB());
-		print("O valor da soma de {$this->getA()} + {$this->getB()} é = {$this->getC()}<br>");
+		print("<div class = 'result'> O valor da soma de {$this->getA()} + {$this->getB()} é =  <b>{$this->getC()}</b><br></div>");
 		return $this;
     }
 
 	public function subtrair(float $a, float $b){
         $this->setC($this->getA()-$this->getB());
-		print("O valor da subtração de {$this->getA()} - {$this->getB()} é = {$this->getC()}<br>");
+		print("<div class = 'result'> O valor da subtração de {$this->getA()} - {$this->getB()} é =  <b>{$this->getC()}</b><br></div>");
 		return $this;
     }
 
 	public function multiplicar(float $a, float $b){
         $this->setC($this->getA()*$this->getB());
-		print("O valor da multiplicação de {$this->getA()} x {$this->getB()} é = {$this->getC()}<br>");
+		print("<div class = 'result'> O valor da multiplicação de {$this->getA()} x {$this->getB()} é =  <b>{$this->getC()}</b><br></div>");
 		return $this;
     }
 
 	public function dividir(float $a, float $b){
 		if($this->getB()==0){
-			print("Erro! Divisão por 0!");
+			print("<div class = 'erro'> Erro! Divisão por 0!</div>");
 		} else{
         $this->setC($this->getA()/$this->getB());
-		print("O valor da divisão de {$this->getA()} / {$this->getB()} é = {$this->getC()}<br>");
+		print("<div class = 'result'> O valor da divisão de {$this->getA()} / {$this->getB()} é =  <b>{$this->getC()}</b><br></div>");
 		return $this;
 		}
 		
@@ -43,17 +43,17 @@ class Calc{
 
 	public function exponenciar(float $a, float $b){
         $this->setC(pow($this->getA(),$this->getB()));
-		print("O valor da exponenciação de {$this->getA()} elevado a {$this->getB()} é = {$this->getC()}<br>");
+		print("<div class = 'result'> O valor da exponenciação de {$this->getA()} elevado a <b>{$this->getB()} é =  {$this->getC()}</b><br></div>");
 		return $this;
     }
 
 	public function acharRaiz(float $a, float $b){
 		if($this->getA()!=0){
 			$this->setC(sqrt($this->getA()));
-			print("O valor da raiz de {$this->getA()} é = {$this->getC()}<br>");
+			print("<div class = 'result'> O valor da raiz de {$this->getA()} é =  <b>{$this->getC()}</b><br></div>");
 		}else if($this->getB()!=0){
 			$this->setC(sqrt($this->getB()));
-			print("O valor da raiz de {$this->getB()} é = {$this->getC()}<br>");
+			print("<div class = 'result'> O valor da raiz de {$this->getB()} é =  <b>{$this->getC()}</b><br></div>");
 		}
 		return $this;
     }

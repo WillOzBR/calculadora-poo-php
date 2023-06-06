@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: #F6F1F1;
+    background-color: #146C94;
 }
 
 .cabecalho{
@@ -22,6 +22,39 @@ body{
     padding-left: 10px;
     padding-right: 30px;
     color: aliceblue;
+}
+
+.resultado{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.result{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: 'Prompt', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    background-color: lightgreen;
+    width: 600px;
+    margin-bottom: 6px;
+    border-radius: 12px;
+    padding-left: 6px;
+}
+
+b{
+    padding-left: 6px;
+}
+
+.result:hover{
+    background-color: green;
+    cursor: pointer;
+    color: white;
+    font-size: 38px;
 }
 
 #ad, #sub, #raz, #exp, #div, #multi{

@@ -48,12 +48,17 @@ class Calc{
     }
 
 	public function acharRaiz(float $a, float $b){
+		if($this->getB()<=0 || $this->getA()<=0){
+			print("<div class = 'erro'> Erro! Raiz negativa!</div>");
+		} else{
 		if($this->getA()!=0){
 			$this->setC(sqrt($this->getA()));
 			print("<div class = 'result'> O valor da raiz de {$this->getA()} é =  <b>{$this->getC()}</b><br></div>");
-		}else if($this->getB()!=0){
+		}
+		if($this->getB()!=0){
 			$this->setC(sqrt($this->getB()));
 			print("<div class = 'result'> O valor da raiz de {$this->getB()} é =  <b>{$this->getC()}</b><br></div>");
+		}
 		}
 		return $this;
     }

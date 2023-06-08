@@ -15,7 +15,7 @@ body{
 .cabecalho{
     display: flex;
     justify-content:space-between;
-    background-color: #146C94;
+    background-color: #19A7CE;
     width: 99%;
     font-family: 'Prompt', sans-serif;
     font-size: 16px;
@@ -30,6 +30,7 @@ body{
     align-items: center;
     flex-direction: column;
     margin-top: 10%;
+    
 }
 
 .result{
@@ -40,10 +41,12 @@ body{
     font-size: 36px;
     text-align: center;
     background-color: lightgreen;
-    width: 600px;
+    width: auto;
     margin-bottom: 6px;
     border-radius: 12px;
-    padding-left: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 1px 10px 19px 2px rgba(0, 0, 0, 0.388);
 }
 
 b{
@@ -55,6 +58,8 @@ b{
     cursor: pointer;
     color: white;
     font-size: 38px;
+    transition: background-color 0.3s ease-out 100ms;
+    transition: font-size 0.2s ease-out 100ms;
 }
 
 #ad, #sub, #raz, #exp, #div, #multi{
@@ -67,12 +72,18 @@ b{
     text-align: center;
     border-style: none;
     align-self: center;
+    transition: background-color 0.3s ease-out 100ms;
+    transition: font-size 0.2s ease-out 100ms;
+    margin-top: 10px;
 }
 
 
 
-#ad, #sub, #raz, #exp, #div, #multi:hover{
-
+#ad:hover, #sub:hover, #raz:hover, #exp:hover, #div:hover, #multi:hover{
+    color: #ffffff;
+    background-color: #146C94;
+    font-size: 26px;
+    box-shadow: 1px 10px 19px 2px rgba(0, 0, 0, 0.055);
 }
 
 .formulario{
@@ -102,11 +113,44 @@ b{
     font-family: 'Prompt', sans-serif;
 }
 
-form{
+#form1{
     background-color: #AFD3E2;
     width: 15%;
     padding-bottom: 40px;
     border-radius: 30px;
+}
+
+.voltar{
+    display: flex;
+    flex-direction: column;
+    align-content:space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 680px;
+}
+
+#btnVoltar{
+    border-radius: 35px;
+    width: 100px;
+    height: 45px;
+    font-size: 25px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    border-style: none;
+    align-self: center;
+    transition: background-color 0.3s ease-out 100ms;
+    transition: font-size 0.2s ease-out 100ms;
+    margin-top: 10px;
+    background-color: #dd8425;
+    color: #ffffff;
+}
+
+#btnVoltar:hover{
+    color: #ffffff;
+    background-color: #ac5411;
+    font-size: 28px;
+    box-shadow: 1px 10px 19px 2px rgba(0, 0, 0, 0.055);
 }
 
 .botao{
@@ -115,4 +159,28 @@ form{
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.erro{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: 'Prompt', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    background-color: rgb(236, 98, 98);
+    width: 800px;
+    margin-bottom: 6px;
+    border-radius: 12px;
+    padding-left: 6px;
+    box-shadow: 1px 10px 19px 2px rgba(0, 0, 0, 0.388);
+}
+
+.erro:hover{
+    background-color: rgb(128, 0, 0);
+    cursor: pointer;
+    color: white;
+    font-size: 38px;
+    transition: background-color 0.3s ease-out 100ms;
+    transition: font-size 0.2s ease-out 100ms;
 }

@@ -13,7 +13,7 @@
         <h1>William Cellegin</h1>
     </div>
     <div class="formulario">
-        <form action="./php/calculadora.php" method="get">
+        <form action="./php/calculadora.php" method="get" id="form1">
             <div class="formulario">
                 <label for="num1">Número 1</label>
                 <input type="text" name="num1" id="num1" value="0">
